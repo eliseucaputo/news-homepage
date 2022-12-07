@@ -261,6 +261,13 @@ section#news-side > article > p {
     justify-content: space-between;
 }
 
+.attribution {
+    text-align: center;
+    margin: 35px 0;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
 /* Media queries */
 
 @media (max-width: 1015px) {
