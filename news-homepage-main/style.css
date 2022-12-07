@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;800&family=Overpass:wght@400;700&display=swap');
+
+/* General */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#container {
+    width: 1000px;
+    background-color: white;
+    margin: 0 auto;   
+
+}
+
+p {
+    color: hsl(236, 13%, 42%);
+}
+
+/* Nav */
+
+#btn-close {
+    display: none;
+    width: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 1.25rem;
+    cursor: pointer;
+    z-index: 999;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header div#menu-button button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    opacity: 0;
+    z-index: -999;
+}
+
+.menu-ul {
+    display: flex;
+    opacity: 100;
+    z-index: 99;
+} 
+
+li {
+    list-style: none;
+    margin-left: 25px;
+    color: hsl(236, 13%, 42%);
+}
+
+ul li a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    transition: color 0.25s;
+}
+
+ul li a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+/* principal */
+
+#top-news {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#principal {
+    width: 670px;
+}
+
+#principal img {
+    max-width: 670px;
+}
+
+#principal-sub1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+#principal-sub1 > h1 {
+    font-size: 2.7em;
+    font-weight: 800;
+    width: 300px;
+}
+
+#principal-sub1 > section {
+    width: 300px;
+}
+
+#principal-sub2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#principal-sub2 p {
+    font-size: 0.89em;
+    padding-top: 10px;
+}
+
+#principal-sub2 > button {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    transition: background-color 0.25s;
+    
+}
+
+#principal-sub2 > button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+#news-side {
+    width: 300px;
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+}
+
+#news-side h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#news-side h3 {
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 1em;
+    padding-top: 20px;
+    transition: color 0.3s;
+}
+
+#news-side h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+section#news-side > article > p {
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.276);
+}
+
+#bottom-news {
+    margin-top: 70px;
+    max-width: 1000px;
+    display: flex;
+}
+
+#bottom-news .news1 {
+    width: 333px;
+}
+
+#bottom-news .news2 {
+    width: 333px;
+}
+
+#bottom-news .news3 {
+    width: 333px;
+}
+
+#bottom-news img {
+    width: 100px;
+    height: 135px;
+}
+
+#bottom-news p {
+    font-size: 0.95em;
+}
+
+#bottom-news span {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: hsl(233, 8%, 79%);
+}
+
+#bottom-news h4 {
+    font-size: 1.1em;
+    transition: color 0.25s;
+}
+
+#bottom-news h4:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.news1 {
+    display: flex;
+}
+
+.news1-flex {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news2 {
+    display: flex;
+}
+
+.news2-flex {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news3 {
+    display: flex;
+}
+
+.news3-flex {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Media queries */
+
+@media (max-width: 1015px) {
+
+    #btn-close {
+        display: none; /*Estava none*/
+    }
+
+    header div#menu-button button {
+        display: none; /* estava none */
+    }
+
+    #container {
+        width: 705px;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px auto;
+        width: 670px;
+    }
+
+    #top-news {
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #principal {
+        width: 670px;
+        margin: 0 auto;
+    }
+
+    #news-side {
+        width: 670px;
+        background-color: hsl(240, 100%, 5%);
+        padding: 20px;
+        margin: 40px auto;
+    }
+
+    #bottom-news {
+        width: 670px;
+        display: flex;
+        margin: 30px auto;
+    }
+
+}
+
+@media (max-width: 710px) {
+
+    #btn-close {
+        display: block; /*Estava block*/
+    }
+
+    header div#menu-button button {
+        display: flex;
+    }
+
+    header {
+        width: 430px;
+        margin: 0 auto;
+    }
+
+    #container {
+        width: 460px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        position: fixed;
+        justify-content: center;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 75vw;
+        background-color: white;
+        padding: 1.25rem;
+        box-shadow: -4px -4px -4px rgba(0, 0, 0, 0.5);
+        z-index: -999;
+        opacity: 1;
+    }
+
+    nav {
+        width: 430px;
+    }
+
+    ul li {
+        margin: 1rem;
+    }
+
+    .img-source {
+        width: 430px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #top-news {
+        width: 430px;        
+    }
+
+    #principal {
+        width: 430px;
+    }
+
+    #principal-sub2 > button {
+        width: 70%;
+    }
+
+    #news-side {
+        width: 430px;    
+    }
+
+    #bottom-news {
+        width: 430px;
+        display: block;
+        margin: 30px auto;
+    }
+
+    #bottom-news .news1, #bottom-news .news2, #bottom-news .news3 {
+        width: 430px;
+        margin-top: 30px;
+    }
+}
