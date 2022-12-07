@@ -273,11 +273,11 @@ section#news-side > article > p {
 @media (max-width: 1015px) {
 
     #btn-close {
-        display: none; /*Estava none*/
+        display: none; 
     }
 
     header div#menu-button button {
-        display: none; /* estava none */
+        display: none;
     }
 
     #container {
